@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+
+# Secretos locales para `wrangler dev`. Nunca al repositorio.
+.dev.vars
+
+# Clave del service account de Google.
+*.json
+!package.json
+!package-lock.json

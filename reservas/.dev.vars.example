@@ -1,0 +1,8 @@
+# Copia a `.dev.vars` para `wrangler dev`. Ese archivo está en .gitignore.
+
+SHEET_ID="el-id-que-sale-en-la-url-del-sheet"
+GOOGLE_CLIENT_EMAIL="tj-reservas@tu-proyecto.iam.gserviceaccount.com"
+GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBADAN...\n-----END PRIVATE KEY-----\n"
+RESEND_API_KEY="re_xxxxxxxxxx"
+FROM_EMAIL="reservas@latabernadelherrero.es"
+NOTIFY_EMAIL="taberna@ejemplo.com"

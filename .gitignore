@@ -1,0 +1,23 @@
+# --- Secretos (nunca al repositorio, ni una sola vez) ---------------------
+# El historial de git es permanente: borrar un secreto después no lo quita del
+# historial. Estas reglas tienen que existir ANTES del primer commit.
+.dev.vars
+*.dev.vars
+# Clave JSON de la cuenta de servicio de Google. Se permiten los .json legítimos
+# del proyecto de forma explícita más abajo.
+*.json
+!package.json
+!package-lock.json
+!assets/data/menu.json
+
+# --- Dependencias y build de Cloudflare -----------------------------------
+node_modules/
+.wrangler/
+
+# --- Sistema operativo / editor -------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/

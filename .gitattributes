@@ -1,0 +1,8 @@
+# Normaliza los saltos de línea: LF en el repositorio, evita diffs de ruido
+# cuando se edita desde Windows.
+* text=auto eol=lf
+
+# Binarios: que git no los toque.
+*.png binary
+*.jpg binary
+*.mp4 binary

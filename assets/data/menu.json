@@ -1,0 +1,292 @@
+[
+  {
+    "id": "aperitivos",
+    "kicker": "Para empezar",
+    "title": "Aperitivos",
+    "items": [
+      {
+        "name": "Marinera",
+        "price": "3,60 €"
+      },
+      {
+        "name": "Mojama y hueva de mújol",
+        "price": "6,60 €"
+      },
+      {
+        "name": "Tabla de jamón de cebo",
+        "price": "Consultar"
+      },
+      {
+        "name": "Tabla de quesos",
+        "price": "Consultar"
+      },
+      {
+        "name": "Tabla de patés vegetales",
+        "price": "9,70 €",
+        "description": "Tomate seco, hummus y remolacha"
+      },
+      {
+        "name": "Carpaccio de ternera",
+        "price": "17,60 €",
+        "description": "Jugo de lima, parmesano y AOVE"
+      },
+      {
+        "name": "Torreznos de Soria",
+        "price": "8,70 €"
+      },
+      {
+        "name": "Caballito crujiente (ud)",
+        "price": "2,50 €",
+        "description": "Rebozado en panko"
+      },
+      {
+        "name": "Croqueta de jamón (2 uds)",
+        "price": "5,50 €"
+      },
+      {
+        "name": "Croqueta de boletus edulis con trufa (2 uds)",
+        "price": "5,50 €",
+        "recommended": true
+      },
+      {
+        "name": "Croqueta de idiazábal y cebolla caramelizada (2 uds)",
+        "price": "5,50 €"
+      },
+      {
+        "name": "Boniato frito, salsa sweet chilli",
+        "price": "7,70 €"
+      },
+      {
+        "name": "Dados de queso frito, mermelada de tomate",
+        "price": "5,50 €"
+      },
+      {
+        "name": "Tosta de salmón",
+        "price": "7,40 €",
+        "description": "Aguacate, tomate y huevas de lumpo",
+        "recommended": true
+      },
+      {
+        "name": "Tosta de jamón de cebo",
+        "price": "6,60 €"
+      },
+      {
+        "name": "Tosta de queso de cabra",
+        "price": "6,50 €",
+        "description": "Sobrasada, nueces y miel"
+      },
+      {
+        "name": "Burrito de carne especiada",
+        "price": "9,40 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Burrito de falafel",
+        "price": "8,00 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Taco de carne mechada",
+        "price": "6,60 €",
+        "description": "Guacamole, pico de gallo y jalapeños",
+        "glutenFree": true
+      }
+    ]
+  },
+  {
+    "id": "marisco",
+    "kicker": "De la lonja",
+    "title": "Marisco",
+    "items": [
+      {
+        "name": "Calamar a la plancha (ración)",
+        "price": "5,50 €"
+      },
+      {
+        "name": "Cazuela de gambas rojas",
+        "price": "20,00 €",
+        "description": "Cocinadas en su jugo"
+      },
+      {
+        "name": "Tartar de salmón",
+        "price": "20,00 €",
+        "description": "Nachos, aguacate y mostaza antigua"
+      },
+      {
+        "name": "Tataki de atún",
+        "price": "22,00 €",
+        "description": "Algas, mayo de wasabi y sésamo",
+        "recommended": true
+      },
+      {
+        "name": "Zamburiña a la plancha, salsa verde",
+        "price": "3,00 €",
+        "recommended": true
+      },
+      {
+        "name": "Cigala a la plancha (2 uds)",
+        "price": "9,00 €"
+      },
+      {
+        "name": "Ostras Guillardeau (ud)",
+        "price": "6,50 €"
+      }
+    ]
+  },
+  {
+    "id": "ensaladas",
+    "kicker": "Frescas",
+    "title": "Ensaladas",
+    "items": [
+      {
+        "name": "Ensalada griega con hummus y pan de pita",
+        "price": "13,50 €",
+        "recommended": true
+      },
+      {
+        "name": "Ensalada de tomate, sardina, bonito y melva",
+        "price": "18,00 €"
+      },
+      {
+        "name": "Salpicón (ración)",
+        "price": "5,00 €"
+      }
+    ]
+  },
+  {
+    "id": "burgers",
+    "kicker": "Entre pan",
+    "title": "Burgers y bocadillos",
+    "items": [
+      {
+        "name": "Hamburguesa mini de buey",
+        "price": "8,00 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Hamburguesa mini de vacuno",
+        "price": "7,00 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Sándwich bikini César",
+        "price": "8,00 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Bocadillo de secreto",
+        "price": "7,70 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Mollete de sepia",
+        "price": "7,70 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Montadito de piquillo y melva",
+        "price": "4,10 €",
+        "glutenFree": true
+      }
+    ]
+  },
+  {
+    "id": "carnes",
+    "kicker": "A la brasa",
+    "title": "Carnes",
+    "items": [
+      {
+        "name": "Cachopo de ternera, patatas y pimientos",
+        "price": "17,50 €",
+        "description": "Jamón de cebo y queso, rebozados en panko",
+        "recommended": true
+      },
+      {
+        "name": "Entrecot trinchado, patatas y pimientos",
+        "price": "31,00 €",
+        "description": "Para compartir"
+      },
+      {
+        "name": "Chuletillas de cordero, patatas y pimientos",
+        "price": "15,50 €"
+      }
+    ]
+  },
+  {
+    "id": "pescados",
+    "kicker": "De la mejor lonja",
+    "title": "Pescados",
+    "items": [
+      {
+        "name": "Dorada",
+        "price": "13,50 €",
+        "description": "Cocinada en su jugo"
+      },
+      {
+        "name": "Lubina",
+        "price": "13,50 €",
+        "description": "Cocinada en su jugo"
+      }
+    ]
+  },
+  {
+    "id": "postres",
+    "kicker": "Para terminar",
+    "title": "Postres",
+    "items": [
+      {
+        "name": "Tiramisú",
+        "price": "5,50 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Suspiro",
+        "price": "6,60 €",
+        "description": "Merengue suizo, yogur griego y sirope de hierbabuena",
+        "glutenFree": true
+      },
+      {
+        "name": "Tarta de queso al horno",
+        "price": "5,10 €",
+        "glutenFree": true
+      },
+      {
+        "name": "Torrija caramelizada",
+        "price": "7,70 €",
+        "description": "Sopa de chocolate blanco y helado",
+        "recommended": true
+      },
+      {
+        "name": "Crepe · chocolate blanco o negro",
+        "price": "4,40 €"
+      },
+      {
+        "name": "Gofre · chocolate blanco o negro",
+        "price": "4,40 €"
+      },
+      {
+        "name": "Brownie de chocolate negro",
+        "price": "5,50 €"
+      }
+    ]
+  },
+  {
+    "id": "bebidas",
+    "kicker": "Para acompañar",
+    "title": "Bebidas",
+    "items": [
+      {
+        "name": "Cerveza Alhambra 1925 / El Águila",
+        "price": "3,30 €"
+      },
+      {
+        "name": "Refrescos",
+        "price": "2,20 €"
+      },
+      {
+        "name": "Agua pequeña / grande",
+        "price": "1,40 € / 2,60 €"
+      }
+    ]
+  }
+]
