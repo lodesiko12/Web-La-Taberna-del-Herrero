@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservas y contacto — TJ · La Taberna del Herrero</title>
+<meta name="description" content="Reserva mesa en TJ · La Taberna del Herrero. Av. Literato Azorín, 8, Yecla (Murcia). Teléfono 611 51 05 50 y WhatsApp.">
+<link rel="icon" href="assets/img/tj-mark-cream.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="assets/img/tj-mark-cream.png" alt="">
+    <span>TJ · La Taberna del Herrero</span>
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="carta.html">Carta</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a class="nav-cta" href="contacto.html" aria-current="page">Reservar</a>
+  </nav>
+
+  <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Inicio</a>
+    <a href="carta.html">Carta</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a class="nav-cta" href="contacto.html" aria-current="page">Reservar</a>
+  </div>
+</header>
+
+<div class="page-hero page-hero--short">
+  <img src="assets/img/foto-barra-interior.png" alt="Interior de La Taberna del Herrero">
+  <div class="page-hero__scrim"></div>
+  <div class="page-hero__inner">
+    <span class="page-hero__eyebrow">Te guardamos sitio</span>
+    <h1>Reservas y Contacto</h1>
+  </div>
+</div>
+
+<section class="contact" id="reserva">
+  <div class="contact__form-col">
+    <div class="contact__intro">
+      <span class="kicker">Reservar mesa</span>
+      <h2>Cuéntanos qué necesitas</h2>
+      <p class="contact__lede">Rellena el formulario y te confirmamos por teléfono, o llámanos directamente.</p>
+    </div>
+
+    <!-- Envía a la API de reservas (carpeta reservas/). El endpoint se configura
+         en data-endpoint; sin él, el formulario avisa en vez de fingir que envía. -->
+    <form class="form" novalidate data-endpoint="">
+      <div class="form__row">
+        <label class="visually-hidden" for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="name" required>
+        <p class="field-error" data-error-for="nombre" hidden></p>
+
+        <label class="visually-hidden" for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" autocomplete="tel" required>
+        <p class="field-error" data-error-for="telefono" hidden></p>
+      </div>
+
+      <label class="visually-hidden" for="email">Email (opcional)</label>
+      <input id="email" name="email" type="email" placeholder="Email (opcional, para enviarte el resguardo)" autocomplete="email">
+      <p class="field-error" data-error-for="email" hidden></p>
+
+      <div class="form__row form__row--three">
+        <label class="visually-hidden" for="fecha">Fecha</label>
+        <input id="fecha" name="fecha" type="date" required>
+
+        <label class="visually-hidden" for="hora">Hora</label>
+        <input id="hora" name="hora" type="time" required>
+
+        <label class="visually-hidden" for="comensales">Comensales</label>
+        <input id="comensales" name="comensales" type="number" min="1" max="12" placeholder="Comensales" required>
+      </div>
+      <p class="field-error" data-error-for="fecha" hidden></p>
+      <p class="field-error" data-error-for="hora" hidden></p>
+      <p class="field-error" data-error-for="comensales" hidden></p>
+
+      <label class="visually-hidden" for="peticion">Petición especial</label>
+      <textarea id="peticion" name="peticion" rows="4" placeholder="Petición especial: terraza, chimenea, comedor privado..."></textarea>
+
+      <!-- Trampa antibots: invisible y fuera del orden de tabulación. -->
+      <div class="honeypot" aria-hidden="true">
+        <label for="web">No rellenar</label>
+        <input id="web" name="web" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit">Solicitar reserva</button>
+
+      <p class="form__status" role="status" hidden></p>
+    </form>
+
+    <div class="contact__direct">
+      <a class="btn btn--ghost" href="tel:+34611510550">Llamar · 611 51 05 50</a>
+      <a class="btn btn--ghost" href="https://wa.me/34611510550" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+
+  <aside class="contact__aside">
+    <div class="info-block">
+      <span class="info-block__label">Dirección</span>
+      <span class="info-block__value">Av. Literato Azorín, 8<br>30510 Yecla, Murcia</span>
+    </div>
+
+    <div class="info-block">
+      <span class="info-block__label">Teléfono</span>
+      <a href="tel:+34611510550">611 51 05 50</a>
+    </div>
+
+    <div class="info-block">
+      <span class="info-block__label">Horario</span>
+      <dl class="hours">
+        <dt>Lunes</dt><dd>Cerrado</dd>
+        <dt>Martes</dt><dd>Cerrado</dd>
+        <dt>Miércoles</dt><dd>13:30–23:30</dd>
+        <dt>Jueves</dt><dd>13:30–1:00</dd>
+        <dt>Viernes</dt><dd>13:30–1:00</dd>
+        <dt>Sábado</dt><dd>13:30–1:00</dd>
+        <dt>Domingo</dt><dd>13:30–24:00</dd>
+      </dl>
+    </div>
+
+    <div class="map">
+      <iframe title="Mapa La Taberna del Herrero" src="https://www.google.com/maps?q=Av.+Literato+Azor%C3%ADn,+8,+30510+Yecla,+Murcia&output=embed" loading="lazy"></iframe>
+    </div>
+
+    <a class="site-footer__social" href="https://www.instagram.com/tjlatabernadelherrero/" target="_blank" rel="noopener">Síguenos en Instagram ↗</a>
+  </aside>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer__cols">
+    <div class="site-footer__col site-footer__brand">
+      <div class="site-footer__mark">
+        <img src="assets/img/tj-mark-cream.png" alt="">
+        <span>La Taberna del Herrero</span>
+      </div>
+      <p>Terraza · Chimenea · Comedor privado</p>
+      <a class="site-footer__social" href="https://www.instagram.com/tjlatabernadelherrero/" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+
+    <div class="site-footer__col">
+      <span class="site-footer__label">Dirección</span>
+      <span>Av. Literato Azorín, 8<br>30510 Yecla, Murcia</span>
+      <a href="tel:+34611510550">611 51 05 50</a>
+    </div>
+
+    <div class="site-footer__col site-footer__col--hours">
+      <span class="site-footer__label">Horario</span>
+      <span>Mié · Jue · Vie · Sáb 13:30–1:00<br>Domingo 13:30–24:00<br>Lunes y martes cerrado</span>
+    </div>
+
+    <div class="site-footer__col">
+      <span class="site-footer__label">Visítanos</span>
+      <a class="btn" href="contacto.html">Cómo llegar</a>
+    </div>
+  </div>
+
+  <div class="site-footer__legal">
+    <span>© 2026 La Taberna del Herrero</span>
+    <span>Yecla, Murcia</span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
