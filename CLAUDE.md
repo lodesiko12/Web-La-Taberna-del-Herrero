@@ -11,7 +11,7 @@ Web de restaurante (Yecla, Murcia) implementada desde un proyecto de Claude Desi
 Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por **widget embebido**.
 
 - Proyecto de diseño origen: `claude.ai/design/p/5115e5a6-03bf-48bb-9d72-039f0c5832fb`
-- Repo git: inicializado, rama `main`. **Aún no subido a GitHub.**
+- Repo git: inicializado, rama `main`. Remoto: github.com/lodesiko12/tj-la-taberna-del-herrero (privado).
 
 ### Datos del negocio (fuente de verdad del copy)
 - Dirección: Av. Literato Azorín, 8 · 30510 Yecla, Murcia
@@ -80,7 +80,7 @@ Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por 
 
 ## Estado del repo
 
-- Rama `main`, sin subir a GitHub.
+- Rama `main`, subida a GitHub (privado, `origin`).
 - `.gitignore` (raíz) bloquea `.dev.vars`, `*.json` de credenciales y `node_modules/`; permite `menu.json`, `package.json`. Verificado con `git check-ignore`.
 - `.gitattributes` normaliza saltos de línea (LF en repo).
 - Identidad git local: `Javier` / `lodesiko12@gmail.com`.
@@ -89,16 +89,14 @@ Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por 
 
 ## Pendientes
 
-1. **Subir a GitHub**: crear el repo remoto y `git push -u origin main`.
-
-2. **Optimización de peso** (sitio ~22 MB, casi todo vídeo):
+1. **Optimización de peso** (sitio ~22 MB, casi todo vídeo):
    - Vídeo hero 18 MB → reencodear a 720p H.264 (<3 MB). **No hay ffmpeg instalado** en la máquina.
    - Fotos PNG sin optimizar (tomas-jose.png = 1,7 MB) → WebP (~3 MB de ahorro).
 
-3. **Revisar el widget de reservas en navegador**: cómo se ve sobre el fondo oscuro, en móvil, y confirmar que el copy "reserva confirmada al momento" (en `contacto.html`) es cierto según cómo configure Turnigo las reservas.
+2. **Revisar el widget de reservas en navegador**: cómo se ve sobre el fondo oscuro, en móvil, y confirmar que el copy "reserva confirmada al momento" (en `contacto.html`) es cierto según cómo configure Turnigo las reservas.
 
-4. **Opcional**: rellenar las 3 tarjetas placeholder (croquetas boletus en home; terraza y chimenea en nosotros) si Javier consigue las fotos.
-5. **Opcional**: poner el widget también en la home (ojo: el `id="reservas-widget"` no puede duplicarse en una página).
+3. **Opcional**: rellenar las 3 tarjetas placeholder (croquetas boletus en home; terraza y chimenea en nosotros) si Javier consigue las fotos.
+4. **Opcional**: poner el widget también en la home (ojo: el `id="reservas-widget"` no puede duplicarse en una página).
 
 ---
 
