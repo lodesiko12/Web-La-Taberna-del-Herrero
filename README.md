@@ -75,9 +75,7 @@ automatically switches to the plain text style.
 - **Responsive behaviour** was JS-driven in the design (a `isMobile` state re-rendering
   the nav). It's now a CSS media query at the same 860px breakpoint, so the layout
   is correct before JS runs.
-- **Reservations** are handled by a Cloudflare Worker that writes to a Google
-  Sheet — see [`reservas/README.md`](reservas/README.md) for setup. Until you
-  deploy it and fill in `data-endpoint` on the form in `contacto.html`, the form
-  tells visitors to phone instead of pretending to send.
+- **Reservations** use an embedded third-party widget (Turnigo) in `contacto.html`,
+  mounted via `#reservas-widget` with `data-slug="tj-la-taberna-del-herrero"`.
 - A fixed `width: 843px; height: 328px` on the homepage philosophy section was
   dropped; it was a design-canvas frame artifact, not a layout intent.

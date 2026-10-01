@@ -53,54 +53,13 @@
   <div class="contact__form-col">
     <div class="contact__intro">
       <span class="kicker">Reservar mesa</span>
-      <h2>Cuéntanos qué necesitas</h2>
-      <p class="contact__lede">Rellena el formulario y te confirmamos por teléfono, o llámanos directamente.</p>
+      <h2>Reserva tu mesa</h2>
+      <p class="contact__lede">Elige día, hora y comensales y tu reserva queda confirmada al momento. Si prefieres hablar con nosotros, llámanos.</p>
     </div>
 
-    <!-- Envía a la API de reservas (carpeta reservas/). El endpoint se configura
-         en data-endpoint; sin él, el formulario avisa en vez de fingir que envía. -->
-    <form class="form" novalidate data-endpoint="">
-      <div class="form__row">
-        <label class="visually-hidden" for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="name" required>
-        <p class="field-error" data-error-for="nombre" hidden></p>
-
-        <label class="visually-hidden" for="telefono">Teléfono</label>
-        <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" autocomplete="tel" required>
-        <p class="field-error" data-error-for="telefono" hidden></p>
-      </div>
-
-      <label class="visually-hidden" for="email">Email (opcional)</label>
-      <input id="email" name="email" type="email" placeholder="Email (opcional, para enviarte el resguardo)" autocomplete="email">
-      <p class="field-error" data-error-for="email" hidden></p>
-
-      <div class="form__row form__row--three">
-        <label class="visually-hidden" for="fecha">Fecha</label>
-        <input id="fecha" name="fecha" type="date" required>
-
-        <label class="visually-hidden" for="hora">Hora</label>
-        <input id="hora" name="hora" type="time" required>
-
-        <label class="visually-hidden" for="comensales">Comensales</label>
-        <input id="comensales" name="comensales" type="number" min="1" max="12" placeholder="Comensales" required>
-      </div>
-      <p class="field-error" data-error-for="fecha" hidden></p>
-      <p class="field-error" data-error-for="hora" hidden></p>
-      <p class="field-error" data-error-for="comensales" hidden></p>
-
-      <label class="visually-hidden" for="peticion">Petición especial</label>
-      <textarea id="peticion" name="peticion" rows="4" placeholder="Petición especial: terraza, chimenea, comedor privado..."></textarea>
-
-      <!-- Trampa antibots: invisible y fuera del orden de tabulación. -->
-      <div class="honeypot" aria-hidden="true">
-        <label for="web">No rellenar</label>
-        <input id="web" name="web" type="text" tabindex="-1" autocomplete="off">
-      </div>
-
-      <button type="submit">Solicitar reserva</button>
-
-      <p class="form__status" role="status" hidden></p>
-    </form>
+    <!-- Widget de reservas online (Turnigo). El script monta el formulario dentro del div. -->
+    <div id="reservas-widget" data-slug="tj-la-taberna-del-herrero"></div>
+    <script src="https://turnigo-widget.lodesiko12.workers.dev/embed.js" async></script>
 
     <div class="contact__direct">
       <a class="btn btn--ghost" href="tel:+34611510550">Llamar · 611 51 05 50</a>
