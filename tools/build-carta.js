@@ -101,7 +101,7 @@ const page = `<!DOCTYPE html>
 </header>
 
 <div class="page-hero page-hero--short">
-  <img src="assets/img/tosta-anchoas.png" alt="Tosta de anchoas">
+  <img src="assets/img/tosta-anchoas.webp" alt="Tosta de anchoas">
   <div class="page-hero__scrim"></div>
   <div class="page-hero__inner">
     <span class="page-hero__eyebrow">Producto de mercado</span>

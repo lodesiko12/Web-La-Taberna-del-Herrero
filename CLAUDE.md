@@ -54,6 +54,7 @@ Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por 
 
 ### Media
 - Todas las fotos (4) + vídeo hero + logo están colocados y verificados byte-idénticos a los originales del diseño.
+- **Optimizado (2026-10-01)**: fotos en WebP (`.webp`, ~200 KB en total) y vídeo hero a 1280×720 H.264 sin audio (1,9 MB, antes 18 MB). Sitio ≈ 2,2 MB. ffmpeg está instalado vía winget (`ffmpeg`); los originales PNG/MP4 están en el historial de git.
 - **3 tarjetas siguen siendo placeholders vacíos** (eran huecos vacíos en el propio diseño), marcadas con comentarios HTML: croquetas de boletus (home), terraza y chimenea (nosotros). Renderizan como paneles oscuros con su título.
 
 
@@ -89,14 +90,10 @@ Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por 
 
 ## Pendientes
 
-1. **Optimización de peso** (sitio ~22 MB, casi todo vídeo):
-   - Vídeo hero 18 MB → reencodear a 720p H.264 (<3 MB). **No hay ffmpeg instalado** en la máquina.
-   - Fotos PNG sin optimizar (tomas-jose.png = 1,7 MB) → WebP (~3 MB de ahorro).
+1. **Revisar el widget de reservas en navegador**: cómo se ve sobre el fondo oscuro, en móvil, y confirmar que el copy "reserva confirmada al momento" (en `contacto.html`) es cierto según cómo configure Turnigo las reservas.
 
-2. **Revisar el widget de reservas en navegador**: cómo se ve sobre el fondo oscuro, en móvil, y confirmar que el copy "reserva confirmada al momento" (en `contacto.html`) es cierto según cómo configure Turnigo las reservas.
-
-3. **Opcional**: rellenar las 3 tarjetas placeholder (croquetas boletus en home; terraza y chimenea en nosotros) si Javier consigue las fotos.
-4. **Opcional**: poner el widget también en la home (ojo: el `id="reservas-widget"` no puede duplicarse en una página).
+2. **Opcional**: rellenar las 3 tarjetas placeholder (croquetas boletus en home; terraza y chimenea en nosotros) si Javier consigue las fotos.
+3. **Opcional**: poner el widget también en la home (ojo: el `id="reservas-widget"` no puede duplicarse en una página).
 
 ---
 

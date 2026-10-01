@@ -36,16 +36,7 @@ powershell -File tools/make-cream-logo.ps1 -Source "C:\ruta\logo.jpg"
 Ink becomes cream (`#EEE9E0`, the `--text` token), white becomes transparent, and
 mid greys keep partial alpha so the flame's antialiased edges stay smooth. The
 counters — the `TJ` letters and the fork tines — stay knocked out, so the page
-background shows through them exactly as in the original mark.
 
-### Two things worth doing
-
-- **The hero video is 17.8 MB**, which is a heavy download on mobile. Re-encoding to
-  720p H.264 at a lower bitrate typically lands under 3 MB with no visible loss at
-  the size it renders. A `poster` frame is already set so the hero shows something
-  immediately while it loads.
-- **Photos are unoptimised PNGs** (`tomas-jose.png` alone is 1.7 MB). Converting the
-  four to WebP would cut roughly 3 MB of page weight.
 
 Three photos were never filled in the design either — they were empty placeholder
 slots. Those cards currently render as dark panels with their captions intact;
