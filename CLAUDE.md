@@ -11,7 +11,7 @@ Web de restaurante (Yecla, Murcia) implementada desde un proyecto de Claude Desi
 Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por **widget embebido**.
 
 - Proyecto de diseño origen: `claude.ai/design/p/5115e5a6-03bf-48bb-9d72-039f0c5832fb`
-- Repo git: inicializado, rama `main`. Remoto: github.com/lodesiko12/tj-la-taberna-del-herrero (privado).
+- Repo git: inicializado, rama `main`. Remoto: github.com/lodesiko12/Web-La-Taberna-del-Herrero (público).
 
 ### Datos del negocio (fuente de verdad del copy)
 - Dirección: Av. Literato Azorín, 8 · 30510 Yecla, Murcia
@@ -80,7 +80,7 @@ Sitio **estático** (HTML/CSS/JS, sin build, sin dependencias) con reservas por 
 
 ## Estado del repo
 
-- Rama `main`, subida a GitHub (privado, `origin`).
+- Rama `main`, subida a GitHub (`origin`, público).
 - `.gitignore` (raíz) bloquea `.dev.vars`, `*.json` de credenciales y `node_modules/`; permite `menu.json`, `package.json`. Verificado con `git check-ignore`.
 - `.gitattributes` normaliza saltos de línea (LF en repo).
 - Identidad git local: `Javier` / `lodesiko12@gmail.com`.
