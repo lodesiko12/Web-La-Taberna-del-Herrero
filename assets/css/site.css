@@ -1127,12 +1127,21 @@ video {
   display: none;
 }
 
-/* Widget de reservas (iframe de Turnigo): el iframe aporta 18px de margen interno;
-   se compensa para alinear su contenido con el título y usar todo el ancho de la columna. */
+/* Widget de reservas (iframe de Turnigo, transparente): el marco lo pone el contenedor.
+   El iframe aporta su propio padding interno (~18px); 480px es su ancho máximo. */
+#reservas-widget {
+  max-width: 496px;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid oklch(0.74 0.11 78 / 0.35);
+  border-top: 2px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 60px -30px oklch(0 0 0 / 0.7);
+}
+
 #reservas-widget iframe {
-  width: calc(100% + 36px) !important;
-  max-width: 480px !important; /* = ancho máximo interno del widget */
-  margin: 0 0 0 -18px !important;
+  max-width: none !important;
+  margin: 0 !important;
 }
 
 .contact__direct {
